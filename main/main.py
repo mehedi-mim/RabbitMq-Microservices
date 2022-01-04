@@ -6,8 +6,8 @@ from sqlalchemy import UniqueConstraint
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://root:root@db/main'
 CORS(app)
-db = SQLAlchemy(app)
 
+db = SQLAlchemy(app)
 
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=False)
