@@ -9,6 +9,7 @@ CORS(app)
 
 db = SQLAlchemy(app)
 
+
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=False)
     title = db.Column(db.String(200))
